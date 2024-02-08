@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import TodoList from './components/TodoList'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="py-10">
-      temp file
-    </div>
-  );
+    <>
+    <TodoList/>
+    </>
+  )
 }
 
-export default App;
+export default App
